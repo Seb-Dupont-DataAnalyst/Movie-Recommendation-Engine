@@ -25,21 +25,21 @@ import datetime
 
 # Import bases de données
 df_bases_acteurs = pd.read_csv(
-    r"C:\Users\dupon\OneDrive\Documents\Wild Code School\Projet 2 Recommandation de films\df_staff.tsv")
+    "https://github.com/Seb-Dupont-DataAnalyst/Movie-Recommendation-Engine\df_staff.tsv")
 df_bases_filmsFR = pd.read_csv(
-    r"C:\Users\dupon\OneDrive\Documents\Wild Code School\Projet 2 Recommandation de films\df_bases_filmsFR_2")
+    "https://github.com/Seb-Dupont-DataAnalyst/Movie-Recommendation-Engine\df_bases_filmsFR_2")
 
 df_bases_visu = pd.read_csv(
-    r"C:\Users\dupon\OneDrive\Documents\Wild Code School\Projet 2 Recommandation de films\df_bases_filmsFR_visu_2")
+    "https://github.com/Seb-Dupont-DataAnalyst/Movie-Recommendation-Engine\df_bases_filmsFR_visu_2")
 
 df_acteurs_visu = pd.read_csv(
-    r"C:\Users\dupon\OneDrive\Documents\Wild Code School\Projet 2 Recommandation de films\df_staff_visu_2")
+    "https://github.com/Seb-Dupont-DataAnalyst/Movie-Recommendation-Engine\df_staff_visu_2")
 df_bases_KNN_F = pd.read_csv(
-    r"C:\Users\dupon\OneDrive\Documents\Wild Code School\Projet 2 Recommandation de films\df_bases_KNN_F")
+    "https://github.com/Seb-Dupont-DataAnalyst/Movie-Recommendation-Engine\df_bases_KNN_F")
 X_bis = pd.read_csv(
-    r"C:\Users\dupon\OneDrive\Documents\Wild Code School\Projet 2 Recommandation de films\X_bis")
+    "https://github.com/Seb-Dupont-DataAnalyst/Movie-Recommendation-Engine\X_bis")
 voisins_final = pd.read_csv(
-    r"C:\Users\dupon\OneDrive\Documents\Wild Code School\Projet 2 Recommandation de films\voisins_final")
+    "https://github.com/Seb-Dupont-DataAnalyst/Movie-Recommendation-Engine\voisins_final")
 
 def translate(x):
     translation = {'Comedy': 'Comédie', 'Fantasy': 'Fantastique', 'Romance': "Romance", 'Drama':'Drame', 'War':'Guerre',
