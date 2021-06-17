@@ -25,21 +25,21 @@ import datetime
 
 # Import bases de données
 df_bases_acteurs = pd.read_csv(
-    "https://github.com/Seb-Dupont-DataAnalyst/Movie-Recommendation-Engine\df_staff.tsv")
+    "https://raw.githubusercontent.com/Seb-Dupont-DataAnalyst/Movie-Recommendation-Engine/main/df_staff.tsv")
 df_bases_filmsFR = pd.read_csv(
-    "https://github.com/Seb-Dupont-DataAnalyst/Movie-Recommendation-Engine\df_bases_filmsFR_2")
+    "https://raw.githubusercontent.com/Seb-Dupont-DataAnalyst/Movie-Recommendation-Engine/main/df_bases_filmsFR_2")
 
 df_bases_visu = pd.read_csv(
-    "https://github.com/Seb-Dupont-DataAnalyst/Movie-Recommendation-Engine\df_bases_filmsFR_visu_2")
+    "https://raw.githubusercontent.com/Seb-Dupont-DataAnalyst/Movie-Recommendation-Engine/main/df_bases_filmsFR_visu_2")
 
 df_acteurs_visu = pd.read_csv(
-    "https://github.com/Seb-Dupont-DataAnalyst/Movie-Recommendation-Engine\df_staff_visu_2")
+    "https://raw.githubusercontent.com/Seb-Dupont-DataAnalyst/Movie-Recommendation-Engine/main/df_staff_visu_2")
 df_bases_KNN_F = pd.read_csv(
-    "https://github.com/Seb-Dupont-DataAnalyst/Movie-Recommendation-Engine\df_bases_KNN_F")
+    "https://raw.githubusercontent.com/Seb-Dupont-DataAnalyst/Movie-Recommendation-Engine/main/df_bases_KNN_F")
 X_bis = pd.read_csv(
-    "https://github.com/Seb-Dupont-DataAnalyst/Movie-Recommendation-Engine\X_bis")
+    "https://raw.githubusercontent.com/Seb-Dupont-DataAnalyst/Movie-Recommendation-Engine/main/X_bis")
 voisins_final = pd.read_csv(
-    "https://github.com/Seb-Dupont-DataAnalyst/Movie-Recommendation-Engine\voisins_final")
+    "https://raw.githubusercontent.com/Seb-Dupont-DataAnalyst/Movie-Recommendation-Engine/main/voisins_final")
 
 def translate(x):
     translation = {'Comedy': 'Comédie', 'Fantasy': 'Fantastique', 'Romance': "Romance", 'Drama':'Drame', 'War':'Guerre',
