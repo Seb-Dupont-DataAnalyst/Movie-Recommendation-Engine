@@ -408,9 +408,9 @@ elif choice == 'Le cinéma en quelques chiffres':
         'averageRating', ascending=False)
     top_10 = top_notes_sorted1.head(10)
 
-    #for i in range(1, 11, 1):
-        #st.write(str(i), '.', top_10['title'].iloc[i-1],
-                 #'(note :', str(top_10['averageRating'].iloc[i-1]), ')')
+    for i in range(1, 11, 1):
+        st.write(str(i), '.', top_10['title'].iloc[i-1],
+                 '(note :', str(top_10['averageRating'].iloc[i-1]), ')')
 
 elif choice == 'Les acteurs dans le cinéma':
 
