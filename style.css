@@ -30,10 +30,10 @@ color : gold
 }
 
 .title {
-color:tomato;
+color:white;
 background-color: transparent;
-font-family:Verdana, Geneva, Tahoma, sans-serif; 
-font-size:50px; 
+font-family:Papyrus; 
+font-size:60px; 
 border: 2px solid white; 
 text-align: center;
 display:block; 
@@ -66,12 +66,11 @@ border-right: 1.5px #dddddd;
 }
 
 .p {
-color:white;
+color:tomato;
 font-family:Verdana; 
-font-size:28px; 
+font-size:18px; 
 text-align: center;
 background-color: transparent;
-font-style: bold;
 font-style: italic;
 }
 
@@ -106,7 +105,7 @@ font-style: bold;
 color:white;
 font-family:Verdana; 
 font-size:14px; 
-text-align: center;
+text-align: left;
 background-color: transparent;
 font-style: italic;
 }
