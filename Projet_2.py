@@ -97,7 +97,7 @@ if choice == "S'enregistrer":
     st.write("")
     st.write("")
 
-    col1, col2 = st.beta_columns(2)
+    col1, col2 = st.columns(2)
 
     with col1:
         field_1 = st.text_input('Prénom')
@@ -310,7 +310,7 @@ elif choice == 'Le cinéma en quelques chiffres':
         fig7.update_yaxes(title_text="<b>Durée", dtick = 50, range = [0,200])
         st.write(fig7)
 
-        col1, col2, col3 = st.beta_columns(3)
+        col1, col2, col3 = st.columns(3)
 
         with col1:
             st.write("")
@@ -375,7 +375,7 @@ elif choice == 'Le cinéma en quelques chiffres':
         fig7.update_yaxes(title_text="<b>Durée", dtick = 50, range = [0,200])
         st.write(fig7)
 
-        col1, col2, col3 = st.beta_columns(3)
+        col1, col2, col3 = st.columns(3)
 
         with col1:
             st.write("")
@@ -456,7 +456,7 @@ elif choice == 'Les acteurs dans le cinéma':
 
     # On affiche le nom + l'image
 
-    col1, col2, col3 = st.beta_columns(3)
+    col1, col2, col3 = st.columns(3)
 
     with col1:
         st.write(str(1), '.', c_final['Acteurs'].iloc[0])
@@ -577,7 +577,7 @@ elif choice == "Le top 10":
     top_3['visu'] = top_3['lien_image'].apply(lambda x: link_preview(x).image)
     
 
-    col1, col2, col3 = st.beta_columns(3)
+    col1, col2, col3 = st.columns(3)
     with col1:
         st.write(str(1), '.', top_3['title'].iloc[0])
         st.write(':star: note :', str(top_3['averageRating'].iloc[0]), '/10')
@@ -652,7 +652,7 @@ elif choice == 'Recommandations personnalisées':
             f = df_bases_KNN_F.iloc[[resultat.iloc[0,2]]]['lien_image'].apply(lambda x: link_preview(x).image)
             g = df_bases_KNN_F.iloc[[resultat.iloc[0,3]]]['lien_image'].apply(lambda x: link_preview(x).image)
 
-            col1, col2, col3 = st.beta_columns(3)
+            col1, col2, col3 = st.columns(3)
 
             with col1:
                 #st.subheader('')
@@ -703,13 +703,13 @@ elif choice == 'Recommandations personnalisées':
 
                 resultat = voisins_final.iloc[X_ter.iloc[:, 0]]
 
-                col1, col2, col3 = st.beta_columns(3)
+                col1, col2, col3 = st.columns(3)
 
                 e = df_bases_KNN_F.iloc[[resultat.iloc[0,1]]]['lien_image'].apply(lambda x: link_preview(x).image)
                 f = df_bases_KNN_F.iloc[[resultat.iloc[0,2]]]['lien_image'].apply(lambda x: link_preview(x).image)
                 g = df_bases_KNN_F.iloc[[resultat.iloc[0,3]]]['lien_image'].apply(lambda x: link_preview(x).image)
 
-                col1, col2, col3 = st.beta_columns(3)
+                col1, col2, col3 = st.columns(3)
 
                 with col1:
                     st.markdown('<body class="p2">Recommandation 1 :</body>', unsafe_allow_html=True)
@@ -797,7 +797,7 @@ elif choice == "Suggestion de films":
         liste_reco_f['visu'] = liste_reco_f['lien_image'].apply(lambda x: link_preview(x).image)
         st.markdown("***")
         
-        col1, col2, col3 = st.beta_columns(3)
+        col1, col2, col3 = st.columns(3)
         with col1:
             st.write(str(1), '.', liste_reco_f['title'].iloc[0])
             st.image(liste_reco_f['visu'].iloc[0], width=200)
@@ -827,7 +827,7 @@ elif choice == "Suggestion de films":
         liste_reco_f['visu'] = liste_reco_f['lien_image'].apply(lambda x: link_preview(x).image)
         st.markdown("***")
         
-        col1, col2, col3 = st.beta_columns(3)
+        col1, col2, col3 = st.columns(3)
         with col1:
             st.write(str(1), '.', liste_reco_f['title'].iloc[0])
             st.image(liste_reco_f['visu'].iloc[0], width=200)
@@ -871,7 +871,7 @@ elif choice == 'Nos soirées spéciales':
     st.markdown("<p class = 'p'>Années 70: Le Parrain (1972)</p>", unsafe_allow_html=True)
     st.markdown("<p class = 'p1'>Le samedi 22 Mai à 20h00</p1>", unsafe_allow_html=True) 
 
-    col1, col2, col3 = st.beta_columns(3)
+    col1, col2, col3 = st.columns(3)
 
     with col1:
         st.write("")
@@ -891,7 +891,7 @@ elif choice == 'Nos soirées spéciales':
     st.markdown("<p class = 'p'>Années 80: Star Wars: Épisode V - L'Empire contre-attaque (1980)</p>", unsafe_allow_html=True)
     st.markdown("<p class = 'p1'>Le samedi 05 Juin à 20h00</p1>", unsafe_allow_html=True)   
     
-    col1, col2, col3 = st.beta_columns(3)
+    col1, col2, col3 = st.columns(3)
 
     with col1:
         st.write("")
@@ -908,7 +908,7 @@ elif choice == 'Nos soirées spéciales':
     st.markdown("<p class = 'p'>Années 90: Les Évadés (1994)</p>", unsafe_allow_html=True)
     st.markdown("<p class = 'p1'>Le samedi 03 Juillet à 20h00</p1>", unsafe_allow_html=True)   
     
-    col1, col2, col3 = st.beta_columns(3)
+    col1, col2, col3 = st.columns(3)
 
     with col1:
         st.write("")
@@ -926,7 +926,7 @@ elif choice == 'Nos soirées spéciales':
     st.markdown("<p class = 'p'>Années 2000: The Dark Knight : Le Chevalier noir (2008)</p>", unsafe_allow_html=True)
     st.markdown("<p class = 'p1'>Le samedi 07 Août à 20h00</p1>", unsafe_allow_html=True)   
     
-    col1, col2, col3 = st.beta_columns(3)
+    col1, col2, col3 = st.columns(3)
 
     with col1:
         st.write("")
@@ -944,7 +944,7 @@ elif choice == 'Nos soirées spéciales':
     st.markdown("<p class = 'p'>Années 2010: Interstellar (2014)</p>", unsafe_allow_html=True)
     st.markdown("<p class = 'p1'>Le samedi 04 Septembre à 20h00</p1>", unsafe_allow_html=True)   
     
-    col1, col2, col3 = st.beta_columns(3)
+    col1, col2, col3 = st.columns(3)
 
     with col1:
         st.write("")
@@ -1016,7 +1016,7 @@ elif choice == 'Nos tarifs':
 
     st.markdown(html_code, unsafe_allow_html=True)
 
-    col1, col2 = st.beta_columns(2)
+    col1, col2 = st.columns(2)
 
     with col1 :
         st.header("")
