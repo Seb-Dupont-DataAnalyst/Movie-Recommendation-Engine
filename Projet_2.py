@@ -774,7 +774,7 @@ elif choice == "Suggestion de films":
     liste_genre = liste_reco['genres'].unique().tolist()
     choix_genre = st.selectbox('Selectionnez un genre', liste_genre)
 
-    my_expander = st.beta_expander('Plus de critères')
+    my_expander = st.expander('Plus de critères')
     with my_expander:
         years_2 = []
         for i in range(2020, 1969, -1):
